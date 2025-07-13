@@ -1,9 +1,9 @@
 services:
   - type: web
     name: potato-disease-backend
-    env: python
-    runtime: python-3.10
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python model_server.py"
+    env: docker
     plan: free
-    autoDeploy: true
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    branch: main
+    repo: https://github.com/pedadasaikrishna/potato-disease-app-backend
