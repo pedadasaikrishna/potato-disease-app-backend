@@ -5,5 +5,5 @@ services:
     plan: free
     region: oregon
     dockerfilePath: ./Dockerfile
-    branch: main
     repo: https://github.com/pedadasaikrishna/potato-disease-app-backend
+    branch: main
